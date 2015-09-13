@@ -6,6 +6,7 @@ import signal
 import os
 from time import sleep
 import sys
+import math
 
 """
 Captouch provides the @captouch.on() decorator
@@ -73,8 +74,14 @@ def light_side():
 def test():
   print("Testing")
   l.clear()
-  b.rgb(0,255,0)
   l.write("Dark or light side of the force?")
+  x = 0
+
+  while True:
+    	x+=1
+
+    	b.sweep( (x%360)/360.0)
+    	sleep(0.01)
 
 # Prevent the script exiting!
 
