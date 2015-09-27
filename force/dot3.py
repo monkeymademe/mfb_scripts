@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-1 -*-
 #!/usr/bin/env python
 
 import dothat.lcd as l
@@ -59,7 +60,7 @@ def dark_side():
   print("Dark side of the force!")
   l.clear()
   b.rgb(255,0,0)
-  l.write("Dark side of the force!")
+  l.write("Ergib dich der dunklen Seite der Macht")
   sleep(10)
   test()
 
@@ -67,14 +68,14 @@ def light_side():
   print("Light side of the force!")
   l.clear()
   b.rgb(0,0,255)
-  l.write("Light side of the force!")
+  l.write("Moege die Macht mit Dir sein, Jedi Meister")
   sleep(10)
   test()
 
 def test():
   print("Testing")
   l.clear()
-  l.write("Dark or light side of the force?")
+  l.write("Jedi oder Sith?")
   x = 0
 
   while True:

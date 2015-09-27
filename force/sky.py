@@ -20,10 +20,10 @@ def send_to_dot3(force):
 @skywriter.flick()
 def flick(start,finish):
   print('Got a flick!', start, finish)
-  if start == "east":
+  if start == "west":
     	#autopy.key.tap(autopy.key.K_LEFT)
 	send_to_dot3('Dark')
-  if start == "west":
+  if start == "east":
     	#autopy.key.tap(autopy.key.K_RIGHT)
 	send_to_dot3('Light')
   if start == "north":
@@ -33,9 +33,9 @@ def flick(start,finish):
     	#autopy.key.tap(autopy.key.K_UP)
 	print start
 
-@skywriter.tap()
-def tap(position):
-  print "Tap Tap"
+#@skywriter.tap()
+#def tap(position):
+#  print "Tap Tap"
 
 
 signal.pause()
